@@ -2,36 +2,32 @@ body {
     text-align: center;
     margin: 0;
     background-color: #fffbf7;
+    box-sizing: border-box;
   }
-  h1 {
-    color: #025157;
-    font-family: "Alegreya", serif;
-    font-size: 60px;
-    margin-bottom: 24px;
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
   }
-  h4{
-    color: #46484c ;
-    font-size: 20px;
-    font-family: "Slabo 27px", serif;
-    margin-bottom: 30px;
-  }
-  p{
-    color: #8b8b8bcc
-  }
+
   li {
     display: inline;
   }
+
   .section{
     margin-top: 285px;
     text-align: center;
     font-family: "Open Sans", sans-serif;
   }
+
   .header {
-    margin: 40px 20px 0;
+    margin: 40px 0;
     font-size: 0;
     height: 45px;
     font-family: sans-serif;
   }
+
   .header > * {
     display: inline-block;
     font-size: 16px;
@@ -39,30 +35,42 @@ body {
     height: 100%;
     line-height: 45px;
   }
+
   .navbar {
     width: 60%;
     text-align: center;
     color: #025157;
+    height: 45px;
   }
+
   .menu-item {
     display: inline;
     font-size: 16px;
     margin: 0 10px;
   }
+
   .actions {
-    width: 25%;
+    width: 20%;
     text-align: left;
     font-size: 0;
   }
+
   .actions > * {
     margin-right: 10px;
     margin-left: 10px;
     font-size: 16px;
     display: inline-block;
   }
+
   .actions a {
     color: #67b54b;
+    font-weight: bold;
+    text-decoration: none;
   }
+  .actions a:hover {
+    cursor: pointer;
+  }
+
   .actions button {
     color: white;
     background-color: #67b54b;
@@ -73,9 +81,16 @@ body {
     border: 0;
     border-radius: 5px;
   }
+
   .logo{
-      width: 15%;
+      width: 20%;
   }
+  
+  .logo img{
+    vertical-align: middle;
+  width: 140px;
+  }
+
   .buttond{
     color: #fff;
     background-color: #025157;
@@ -90,17 +105,52 @@ body {
     font-size: inherit;
     line-height: inherit;
   }
-  form{
-    height: 55px;
-  }
-input{
-  border: 1px solid #b6b6b6;
-    padding: 6px 20px;
-    width: 60%;
-    max-width: 250px;
-    height: 75%;
-    border-radius: 8px;
+
+.intro {
+  width: 80%;
+  margin: 30px auto;
 }
-.buttond, input{
-  overflow: visible;
-}.
+
+.intro img {
+  width: 80%;
+}
+
+.section h1 {
+  color: #025157;
+  font-family: 'Alegreya', serif;
+  font-size: 60px;
+  margin: 60px auto;
+  font-weight: 800;
+}
+
+.section p {
+  color: #46484c;
+  font-size: 20px;
+  margin-bottom: 30px;
+  font-family: 'Slabo 27px', serif;
+}
+
+.section form {
+  height: 55px;
+  margin-bottom: 30px;
+}
+
+.section input {
+  border: 1px solid #b6b6b6;
+  padding: 6px 20px;
+  border-radius: 8px;
+  height: 100%;
+}
+
+.section button {
+  background-color: #025157;
+  color: #fff;
+  border: none;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  height: 100%;
+  padding: 6px 20px;
+  margin-left: -10px;
+}
