@@ -174,27 +174,27 @@ body {
   padding: 6px 20px;
   margin-left: -10px;
 }
+.publish form {
+  height: 55px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  color: #025157;
+  margin-right: 18px;
+}
 .publish h3 {
   font-family: 'Alegreya', serif;
   font-size: 40px;
   line-height: 48px;
   color: #025157;
 }
-.publish > p {
+.publish p {
   font-size: 16px;
   color: #343434;
   line-height: 1.5;
   margin-bottom: 20px;
-}
-.publish > form {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-}
-.publish > form p {
-  color: #025157;
-  margin-right: 18px;
 }
 .promo {
   display: flex;
@@ -213,7 +213,7 @@ body {
   justify-content: flex-start;
   text-align: left;
   flex: 1;
-  padding: 0 25px;
+  padding: 0 100px;
 }
 
 .prototype {
