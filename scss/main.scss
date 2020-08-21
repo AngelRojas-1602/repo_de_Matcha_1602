@@ -60,8 +60,86 @@
     .card-text {
       color:$card-color;
       font-size: 18px;
+      .read-more a {
+        text-decoration: underline;
+        cursor: pointer;
+      }
     }
-    
+    .author {
+      & img {
+        border-radius: 50%;
+        width: 35px;
+        height: 35px;
+      }
+      & p {
+        margin-left: 8px;
+        font-weight: 600;
+        font-size:14px ;
+        color:$card-color;
+      }
+    }
 }
 
+.home-people {
+  background-image: url(https://getmatcha.com/wp-content/themes/getmatcha/img/home_people.png);
+  background-position:center ;
+  background-size: cover;
+  background-color: white;
+  height: 350px;
+}
 
+.try-it {
+  padding: 5% 5% 2%;
+  background-color: $fondo-color;
+  margin-top: -30px;
+  & h2{
+    color:$dark-green-title;
+    font-size: 60px;
+    font-family: $font-tittle;
+  }
+  & form {
+    margin-top: 20px;
+    margin-bottom: 15px;
+  }
+  & p{
+    color: $white;
+    font-size: 14px;
+    font-weight: 500;
+  }
+}
+
+.cta {
+  padding: 5% 10% 0;
+  margin: 0;
+  max-width: unset;
+  .box{
+    background-color: $dark-green-title;
+    color: #fff;
+    padding: 5%;
+    border-radius: 10px;
+    & p {
+      color: #fff;
+      margin-top: 15px;
+      line-height: 25px;
+      font-weight: 400;
+      font-size: 17px;
+    }
+    & h2 {
+      font-family: $font-tittle;
+      font-size: 34px;
+      max-width: 340px;
+      line-height: 1.3;
+    }
+    & p {
+      & a {
+        color: #6abf4b;
+      }
+    }
+    form {
+      height: 55px;
+      & button {
+        background-color: $light-green;
+      }
+    }
+  }
+}
